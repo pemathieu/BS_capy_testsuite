@@ -1,11 +1,10 @@
-server: "hub-cloud.browserstack.com"
-user: "BROWSERSTACK_USERNAME"
-key: "BROWSERSTACK_ACCESS_KEY"
+server: hub-cloud.browserstack.com
+user: BROWSERSTACK_USERNAME
+key: BROWSERSTACK_ACCESS_KEY
 
 common_caps:
-  "build": "capybara-browserstack"
-  "browserstack.debug": true
+  build: capybara-browserstack
+  browserstack.debug: true
 
 browser_caps:
-  -
-    "browser": "chrome"
+- browser: chrome
