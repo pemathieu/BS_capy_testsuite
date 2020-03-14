@@ -1,10 +1,11 @@
 server: hub-cloud.browserstack.com
-user: BROWSERSTACK_USERNAME
-key: BROWSERSTACK_ACCESS_KEY
+user: "pierreedouardmat1"
+key: "ypPtsauCEeEzxZTZVUNW"
 
 common_caps:
   build: capybara-browserstack
   browserstack.debug: true
+  name: BS-PEM-[Capybara]-para
 
 browser_caps:
 - browser: chrome
