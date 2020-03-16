@@ -1,5 +1,5 @@
 When /^I discover$/ do
-  click_button('Discover')
+  click_button("Discover")
 end
 
 Then /^I should see homepage do
