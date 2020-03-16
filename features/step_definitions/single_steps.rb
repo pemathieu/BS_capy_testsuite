@@ -1,7 +1,17 @@
-When(/^I first come and consult "([^"]*)"$/) do |text|
-  click_link(text, :match => :first)
+
+# Google Steps
+Given(/^I am on (.*)$/) do |url|
+  visit url
 end
 
-Then(/^I should see "([^"]*)"$/) do |text|
-  expect(page).to have_content(text)
+When(/^I fill in "([^\"]*)" found by "([^\"]*)" with "([^\"]*)"$/)do |value, type, keys|
+  fill_in(value, :with => keys)
+end
+
+When(/^I submit$/) do
+  find_field('q').native.send_key(:enter)
+end
+ 
+Then( /^I should see title "([^\"]*)"$/) do |title|
+  expect(page).to have_title title
 end

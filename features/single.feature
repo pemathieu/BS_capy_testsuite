@@ -1,8 +1,10 @@
-Feature: securange testing
+# Google Feature
+Feature: Google Search Functionality
 
 Background:
-  Given I am on https://www.securange.fr/
+  Given I am on https://www.google.com/ncr
 
-Scenario: Can consult bien choisir
-  When I first come and consult "BIEN CHOISIR"
-  Then I should see "Quel siège auto choisir ?"
+Scenario: Can find search results
+  When I fill in "q" found by "name" with "BrowserStack"
+  And I submit
+  Then I should see title "BrowserStack - Google Search"
