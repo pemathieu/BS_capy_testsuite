@@ -6,5 +6,5 @@ Background:
 
 Scenario: Can discover
   When I discover
-  Then I should see homepage
+  Then I should see "TV channels (Square)"
   

@@ -1,7 +1,7 @@
-When /^I discover$/ do
+When(/^I discover$/) do
   click_button("Discover")
 end
 
-Then /^I should see homepage do
-  expect(page).to have_content("TV channels (Square)")
+Then(/^I should see "([^"]*)"$/) do |text|
+  expect(page).to have_content(text)
 end
