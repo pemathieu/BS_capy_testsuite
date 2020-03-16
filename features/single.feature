@@ -9,10 +9,9 @@ Scenario: Can find search results
   And I submit
   Then I should see title "BrowserStack - Google Search"
 
-Background:
-  Given I am on https://www.google.com/ncr
 
-Scenario: Can find search results
+Scenario: Can find and use search results
+  Given I am on https://www.google.com/ncr
   When I fill in "q" found by "name" with "securange"
   And I submit
   And I clickresult "www.securange.fr"
