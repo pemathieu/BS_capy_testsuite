@@ -1,5 +1,5 @@
 When(/^I consult "([^"]*)"$/) do |text|
-  click('text')
+  click_link('text')
 end
 
 Then(/^I should see "([^"]*)"$/) do |text|
