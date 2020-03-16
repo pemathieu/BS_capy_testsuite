@@ -1,4 +1,5 @@
-When(/^I consult "([^"]*)"$/) do |text|
+When(/^I first come and consult "([^"]*)"$/) do |text|
+  find_button(" J'accepte ").click
   click_link(text, :match => :first)
 end
 
