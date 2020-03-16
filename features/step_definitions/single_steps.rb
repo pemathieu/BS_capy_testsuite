@@ -17,7 +17,8 @@ When(/^I clickresult "([^\"]*)"$/) do |search|
 end
 
 When(/^I login$/) do
-  find(:xpath, './/div[contains(., "Login")]').click()
+ # find(:xpath, './/div[contains(., "Login")]').click()
+  click_on(class: 'style_actionButton__2jhWW style_root__2qEAj style_loginNormal__3vKW2')
 end
 
 Then( /^I should see answer "([^\"]*)"$/) do |answer|
