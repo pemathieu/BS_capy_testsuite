@@ -1,10 +1,8 @@
-Feature: beemix's discover Search and watch details Functionalities
+Feature: securange testing
 
 Background:
-  Given I am on https://beemix-web.labs.rd.alphanetworks.tv/
+  Given I am on https://www.securange.fr/
 
-
-Scenario: Can discover
-  When I discover
-  Then I should see "TV channels (Square)"
-  
+Scenario: Can consult bien choisir
+  When I consult "BIEN CHOISIR"
+  Then I should see "Quel siège auto choisir ?"
