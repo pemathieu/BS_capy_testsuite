@@ -1,9 +1,5 @@
 
 # Google Steps
-Given(/^I am on (.*)$/) do |url|
-  visit url
-end
-
 When(/^I fill in "([^\"]*)" found by "([^\"]*)" with "([^\"]*)"$/)do |value, type, keys|
   fill_in(value, :with => keys)
 end
