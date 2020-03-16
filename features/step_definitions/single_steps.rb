@@ -15,3 +15,11 @@ end
 When(/^I clickresult "([^\"]*)"$/) do |search|
   click_link(search, :match => :first)
 end
+
+When(/^I login$/) do
+  find(:xpath, './/div[contains(., "Login")]').click()
+end
+
+Then( /^I should see answer "([^\"]*)"$/) do |answer|
+  expect(page).to have_content answer
+end
