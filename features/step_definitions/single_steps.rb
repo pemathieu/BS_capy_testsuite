@@ -19,7 +19,7 @@ end
 When(/^I login$/) do
  # find(:xpath, './/div[contains(., "Login")]').click()
  # click_on(class: 'style_actionButton__2jhWW style_root__2qEAj style_loginNormal__3vKW2')
-  find_field('Your password', :placeholder).native.send_key(:enter)
+  find_field('Your password').native.send_key(:enter)
 end
 
 Then( /^I should see answer "([^\"]*)"$/) do |answer|
