@@ -14,7 +14,7 @@ Cucumber::Rake::Task.new(:local) do |task|
 end
 
 task :parallel do |_t, _args|
-  @num_parallel = 4
+  @num_parallel = 5
 
   Parallel.map([*1..@num_parallel], in_processes: @num_parallel) do |task_id|
     ENV['TASK_ID'] = (task_id - 1).to_s
