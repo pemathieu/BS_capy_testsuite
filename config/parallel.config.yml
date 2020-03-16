@@ -9,14 +9,29 @@ common_caps:
   name: BS-PEM-[Capybara]-para
 
 browser_caps:
-- browser: chrome
--
-    device: Samsung Galaxy S9
-    realMobile: true
-    os_version: 8.0
--
-    device: iPhone X
-    realMobile: true
-    os_version: 11
-- browser: internet explorer
-- browser: safari
+  -
+    "os": "Windows"
+    "os_version": "10"
+    "browser": "Chrome"
+    "browser_version": "80.0"
+    "resolution": "1024x768"
+  -
+    "os": "Windows"
+    "os_version": "10"
+    "browser": "Edge"
+    "browser_version": "80.0"
+    "resolution": "1024x768"
+  -
+    "os": "Windows"
+    "os_version": "10"
+    "browser": "IE"
+    "browser_version": "11.0"
+    "resolution": "1024x768"
+  -
+    "device": "iPhone X"
+    "realMobile": "true"
+    "os_version": "11"
+  -
+    "device": "iPhone 7"
+    "realMobile": "true"
+    "os_version": "10"    
