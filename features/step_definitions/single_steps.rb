@@ -11,3 +11,7 @@ end
 Then( /^I should see title "([^\"]*)"$/) do |title|
   expect(page).to have_title title
 end
+
+When(/^I clickresult "([^\"]*)"$/) do |search|
+  click_link(search, :match => :first)
+end
